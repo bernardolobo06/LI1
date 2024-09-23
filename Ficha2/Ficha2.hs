@@ -63,14 +63,14 @@ contida (Circulo (a, b) r) (Rectangulo (x1, y1) (x2, y2)) = False
 contida (Circulo (a, b) r) (Quadrado (x, y) l) = False
 contida (Rectangulo (x1, y1) (x2, y2)) (Quadrado (a, b) l) = False
 
-contida (Circulo (a, b) r1) (Circulo (c, d) r2) = (a-r1 > c-r2) && (a+r1 < c+r2) && (b-r1 > d-r2) && (b+r1 < d+r2)
-contida (Rectangulo (x1, y1) (x2, y2)) (Rectangulo (x3, y3) (x4, y4)) = (min x1 x2 > min x3 x4) && (max x1 x2 < max x3 x4) && (min y1 y2 > min y3 y4) && (max y1 y2 < max y3 y4)
-contida (Quadrado (x1, y1) l1) (Quadrado (x2, y2) l2) = (x1 > x2) && (x1+l1 < x2+l2) && (y1-l1 > y2-l2) && (y1 < y2)
+contida (Circulo (a, b) r1) (Circulo (c, d) r2) = (a-r1 >= c-r2) && (a+r1 <= c+r2) && (b-r1 >= d-r2) && (b+r1 <= d+r2)
+contida (Rectangulo (x1, y1) (x2, y2)) (Rectangulo (x3, y3) (x4, y4)) = (min x1 x2 >= min x3 x4) && (max x1 x2 <= max x3 x4) && (min y1 y2 >= min y3 y4) && (max y1 y2 <= max y3 y4)
+contida (Quadrado (x1, y1) l1) (Quadrado (x2, y2) l2) = (x1 >= x2) && (x1+l1 <= x2+l2) && (y1-l1 >= y2-l2) && (y1 <= y2)
 
 contidaDifer :: Figura -> Figura -> Bool
-contidaDifer (Circulo (a, b) r) (Rectangulo (x1, y1) (x2, y2)) = (a-r > min x1 x2) && (a+r < max x1 x2) && (b-r > min y1 y2) && (b+r < max y1 y2)
-contidaDifer (Rectangulo (x1, y1) (x2, y2)) (Circulo (a, b) r) = (max x1 x2-a)^2 + (max y1 y2-b)^2 <= r^2 && (min x1 x2-a)^2 + (min y1 y2-b)^2 <= r^2
-contidaDifer (Circulo (a, b) r) (Quadrado (x, y) l) = (a-r > x) && (a+r < x+l) && (b-r > y-l) && (b+r < y)
--- contidaDifer (Quadrado (x, y) l) (Circulo (a, b) r) = 
--- contidaDifer (Rectangulo (x1, y1) (x2, y2)) (Quadrado (a, b) l) = 
--- contidaDifer (Quadrado (a, b) l) (Rectangulo (x1, y1) (x2, y2)) =
+contidaDifer (Circulo (a, b) r) (Rectangulo (x1, y1) (x2, y2)) = (a-r >= min x1 x2) && (a+r <= max x1 x2) && (b-r >= min y1 y2) && (b+r <= max y1 y2)
+contidaDifer (Rectangulo (x1, y1) (x2, y2)) (Circulo (a, b) r) = ((max x1 x2-a)^2 + (max y1 y2-b)^2 <= r^2) && ((min x1 x2-a)^2 + (min y1 y2-b)^2 <= r^2)
+contidaDifer (Circulo (a, b) r) (Quadrado (x, y) l) = (a-r >= x) && (a+r <= x+l) && (b-r >= y-l) && (b+r <= y)
+contidaDifer (Quadrado (x, y) l) (Circulo (a, b) r) = ((x+l-a)^2 + (y-b)^2 <= r^2) && ((x-a)^2 + (y-l-b)^2 <= r^2)
+contidaDifer (Rectangulo (x1, y1) (x2, y2)) (Quadrado (a, b) l) = (min x1 x2 >= a) && (max x1 x2 <= a+l) && (min y1 y2 >= b-l) && (max y1 y2 <= b)
+contidaDifer (Quadrado (a, b) l) (Rectangulo (x1, y1) (x2, y2)) = (a >= min x1 x2) && (a+l <= max x1 x2) && (b-l >= min y1 y2) && (b <= max y1 y2)
