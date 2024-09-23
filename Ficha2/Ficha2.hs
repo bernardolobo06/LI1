@@ -74,3 +74,8 @@ contidaDifer (Circulo (a, b) r) (Quadrado (x, y) l) = (a-r >= x) && (a+r <= x+l)
 contidaDifer (Quadrado (x, y) l) (Circulo (a, b) r) = ((x+l-a)^2 + (y-b)^2 <= r^2) && ((x-a)^2 + (y-l-b)^2 <= r^2)
 contidaDifer (Rectangulo (x1, y1) (x2, y2)) (Quadrado (a, b) l) = (min x1 x2 >= a) && (max x1 x2 <= a+l) && (min y1 y2 >= b-l) && (max y1 y2 <= b)
 contidaDifer (Quadrado (a, b) l) (Rectangulo (x1, y1) (x2, y2)) = (a >= min x1 x2) && (a+l <= max x1 x2) && (b-l >= min y1 y2) && (b <= max y1 y2)
+
+zoom :: Figura -> Double -> Figura
+zoom (Circulo (a, b) r) esc = Circulo (a, b) (r*esc)
+zoom (Quadrado (x, y) l) esc = Quadrado (x, y*esc) (l*esc) 
+zoom (Rectangulo (x1, y1) (x2, y2)) esc = Rectangulo (min x1 x2, min y1 y2) (min x1 x2 + (max x1 x2 - min x1 x2)*esc, min y1 y2 + (max y1 y2 - min y1 y2)*esc)
