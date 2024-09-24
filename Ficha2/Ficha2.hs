@@ -60,8 +60,11 @@ maiorCirculo (Quadrado (a, b) l) = Circulo (a+l/2, b-l/2) (l/2)
 
 contida :: Figura -> Figura -> Bool
 contida (Circulo (a, b) r) (Rectangulo (x1, y1) (x2, y2)) = False
+contida (Rectangulo (x1, y1) (x2, y2)) (Circulo (a, b) r) = False
 contida (Circulo (a, b) r) (Quadrado (x, y) l) = False
+contida (Quadrado (x, y) l) (Circulo (a, b) r) = False
 contida (Rectangulo (x1, y1) (x2, y2)) (Quadrado (a, b) l) = False
+contida (Quadrado (a, b) l) (Rectangulo (x1, y1) (x2, y2)) = False
 
 contida (Circulo (a, b) r1) (Circulo (c, d) r2) = (a-r1 >= c-r2) && (a+r1 <= c+r2) && (b-r1 >= d-r2) && (b+r1 <= d+r2)
 contida (Rectangulo (x1, y1) (x2, y2)) (Rectangulo (x3, y3) (x4, y4)) = (min x1 x2 >= min x3 x4) && (max x1 x2 <= max x3 x4) && (min y1 y2 >= min y3 y4) && (max y1 y2 <= max y3 y4)
