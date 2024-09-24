@@ -46,13 +46,13 @@ vel (x, y) (vx, vy) t = (x + (vx*t), y + (vy*t))
 data Figura = Circulo Ponto Double | Rectangulo Ponto Ponto | Quadrado Ponto Double deriving (Show,Eq)  -- Exercicio 8
 
 pontoFig :: Ponto -> Figura -> Bool  
-pontoFig (x, y) (Circulo (a, b) r) = (x-a)^2 + (y-b)^2 <= r^2
+pontoFig p (Circulo c r) = dist p c <= r
 pontoFig (x, y) (Rectangulo (x1, y1) (x2, y2)) = (x >= min x1 x2) && (x <= max x1 x2) && (y >= min y1 y2) && (y <= max y1 y2)
-pontoFig (x, y) (Quadrado (a, b) l) = (x >= a) && (x <= a+l) && (y >= b-l) && (y <= b)
+pontoFig (x, y) (Quadrado (a, b) l) = pontoFig (x, y) (Rectangulo (a, b) (a+l, b-l)) 
 
 menorQuadrado :: Figura -> Figura
 menorQuadrado (Circulo (a, b) r) = Quadrado (a-r, b+r) (r*2)
-menorQuadrado (Rectangulo (x1, y1) (x2, y2)) = Quadrado (min x1 x2, max y1 y2) (abs (x2-x1))
+menorQuadrado (Rectangulo (x1, y1) (x2, y2)) = Quadrado (min x1 x2, max y1 y2) (max (abs (x1-x2)) (abs (y1-y2)))
 menorQuadrado (Quadrado (a, b) l) = Quadrado (a, b) l
 
 maiorCirculo :: Figura -> Figura
