@@ -20,7 +20,7 @@ moveJanInf :: Ponto -> Movimento -> Double -> Ponto  -- Exercicio 2
 moveJanInf (x, y) Norte jan = (x, min jan y+1)
 moveJanInf (x, y) Sul jan = (x, max 0 y-1)
 moveJanInf (x, y) Este jan = (min jan x+1, y)
-moveJanInf (x, y) Oeste jan = (max jan x-1, y)
+moveJanInf (x, y) Oeste jan = (max 0 x-1, y)
 
 pontoJanSup :: Ponto -> Double -> Ponto  -- Exercicio 3
 pontoJanSup (x, y) jan = (x, jan-y)
