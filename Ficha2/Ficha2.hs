@@ -28,15 +28,19 @@ pontoJanSup (x, y) jan = (x, jan-y)
 pontoJanCt :: Ponto -> Double -> Ponto  -- Exercicio 4
 pontoJanCt (x, y) jan = (x-(jan/2), y-(jan/2))
 
-velHor :: Ponto -> Double -> Double -> Ponto  -- Exercicio 5
+type Velocidade = Double  -- Exercicio 5
+
+type Tempo = Double
+
+velHor :: Ponto -> Velocidade -> Tempo -> Ponto  
 velHor (x, y) vel t = (x + (vel*t), y)
 
-velVert :: Ponto -> Double -> Double -> Ponto  -- Exercicio 6
+velVert :: Ponto -> Velocidade -> Tempo -> Ponto  -- Exercicio 6
 velVert (x, y) vel t = (x, y + (vel*t))
 
-type Velocidade = (Double, Double)  -- Exercicio 7
+type Vel = (Double, Double)  -- Exercicio 7
 
-vel :: Ponto -> Velocidade -> Double -> Ponto  
+vel :: Ponto -> Vel -> Double -> Ponto  
 vel (x, y) (vx, vy) t = (x + (vx*t), y + (vy*t))
 
 data Figura = Circulo Ponto Double | Rectangulo Ponto Ponto | Quadrado Ponto Double deriving (Show,Eq)  -- Exercicio 8
