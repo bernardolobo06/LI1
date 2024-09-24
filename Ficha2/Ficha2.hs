@@ -1,8 +1,8 @@
-data Movimento = Norte | Sul | Este | Oeste deriving Show
+data Movimento = Norte | Sul | Este | Oeste deriving Show  -- Exercicio 1
 
 type Ponto = (Double, Double)
 
-move :: Ponto -> Movimento -> Ponto  -- Exercicio 1
+move :: Ponto -> Movimento -> Ponto  
 move (x, y) Norte = (x, y+1)
 move (x, y) Sul = (x, y-1)
 move (x, y) Este = (x+1, y)
@@ -34,14 +34,14 @@ velHor (x, y) vel t = (x + (vel*t), y)
 velVert :: Ponto -> Double -> Double -> Ponto  -- Exercicio 6
 velVert (x, y) vel t = (x, y + (vel*t))
 
-type Velocidade = (Double, Double)
+type Velocidade = (Double, Double)  -- Exercicio 7
 
-vel :: Ponto -> Velocidade -> Double -> Ponto  -- Exercicio 7
+vel :: Ponto -> Velocidade -> Double -> Ponto  
 vel (x, y) (vx, vy) t = (x + (vx*t), y + (vy*t))
 
-data Figura = Circulo Ponto Double | Rectangulo Ponto Ponto | Quadrado Ponto Double deriving (Show,Eq)
+data Figura = Circulo Ponto Double | Rectangulo Ponto Ponto | Quadrado Ponto Double deriving (Show,Eq)  -- Exercicio 8
 
-pontoFig :: Ponto -> Figura -> Bool  -- Exercicio 8
+pontoFig :: Ponto -> Figura -> Bool  
 pontoFig (x, y) (Circulo (a, b) r) = (x-a)^2 + (y-b)^2 <= r^2
 pontoFig (x, y) (Rectangulo (x1, y1) (x2, y2)) = (x >= min x1 x2) && (x <= max x1 x2) && (y >= min y1 y2) && (y <= max y1 y2)
 pontoFig (x, y) (Quadrado (a, b) l) = (x >= a) && (x <= a+l) && (y >= b-l) && (y <= b)
