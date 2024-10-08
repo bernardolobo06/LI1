@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="annot"><span class="hs-comment">{-|
+Module      : Exemplo
+Description : M&#243;dulo Haskell contendo fun&#231;&#245;es recursivas.
+Copyright   : (c) Algu&#233;m &lt;alguem@algures.com&gt;, 2024
+              Outro  Algu&#233;m  &lt;outro@algures.com&gt;, 2024   
+Maintainer  : alguem@algures.com
+Stability   : experimental
+Portability : POSIX
+
+Este m&#243;dulo cont&#233;m defini&#231;&#245;es Haskell para o c&#225;lculo de fun&#231;&#245;es recursivas simples (obs: isto &#233; apenas uma descri&#231;&#227;o mais longa do m&#243;dulo para efeitos de documenta&#231;&#227;o.)
+-}</span></span><span>
+</span><span id="line-12"></span><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">Exemplo</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-13"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'fact' calcula o factorial (@fact n@ retorna o factorial de um inteiro @n@).
+
+Alternativamente a fun&#231;&#227;o poderia ser definida da seguinte forma:
+
+@
+fact n = if n&gt;0 then n * fact (n-1)
+                else 1
+@
+
+==  __Exemplos de utiliza&#231;&#227;o:__
+&gt;&gt;&gt; fact 5
+120
+&gt;&gt;&gt; fact 0
+1
+
+== __Propriedades:__
+prop&gt; fact 0 = 1
+prop&gt; n&gt;0 =&gt; fact n = n  * fact (n-1)
+-}</span></span><span>
+</span><span id="line-32"></span><span class="annot"><a href="Exemplo.html#fact"><span class="hs-identifier hs-type">fact</span></a></span><span> </span><span class="hs-glyph">::</span><span>
+</span><span id="line-33"></span><span>  </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span>       </span><span class="annot"><span class="hs-comment">-- ^ argumento assume-se n&#227;o negativo</span></span><span>
+</span><span id="line-34"></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span>    </span><span class="annot"><span class="hs-comment">-- ^ resultado</span></span><span>
+</span><span id="line-35"></span><span id="fact"><span class="annot"><span class="annottext">fact :: Integer -&gt; Integer
+</span><a href="Exemplo.html#fact"><span class="hs-identifier hs-var hs-var">fact</span></a></span></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">1</span></span><span>
+</span><span id="line-36"></span><span class="annot"><a href="Exemplo.html#fact"><span class="hs-identifier hs-var">fact</span></a></span><span> </span><span id="local-6989586621679015910"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679015910"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679015910"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer
+</span><a href="Exemplo.html#fact"><span class="hs-identifier hs-var">fact</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679015910"><span class="hs-identifier hs-var">n</span></a></span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">1</span></span><span class="hs-special">)</span><span>
+</span><span id="line-37"></span><span>
+</span><span id="line-38"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'fib' retorna o @n@-&#233;simo elemento da sequ&#234;ncia de Fibonacci.
+Algumas caracter&#237;sticas que distinguem a fun&#231;&#227;o 'fib' da 'fact':
+
+* o padr&#227;o de recursividade &#233; bin&#225;rio;
+
+* disp&#245;e de dois casos base.
+
+== __Exemplos de utiliza&#231;&#227;o:__
+&gt;&gt;&gt; fib 4
+3
+&gt;&gt;&gt; fib 10
+55
+-}</span></span><span>
+</span><span id="line-51"></span><span class="annot"><a href="Exemplo.html#fib"><span class="hs-identifier hs-type">fib</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span>
+</span><span id="line-52"></span><span id="fib"><span class="annot"><span class="annottext">fib :: Integer -&gt; Integer
+</span><a href="Exemplo.html#fib"><span class="hs-identifier hs-var hs-var">fib</span></a></span></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">0</span></span><span>  </span><span>
+</span><span id="line-53"></span><span class="annot"><a href="Exemplo.html#fib"><span class="hs-identifier hs-var">fib</span></a></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">1</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">1</span></span><span>  </span><span>
+</span><span id="line-54"></span><span class="annot"><a href="Exemplo.html#fib"><span class="hs-identifier hs-var">fib</span></a></span><span> </span><span id="local-6989586621679015913"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679015913"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer
+</span><a href="Exemplo.html#fib"><span class="hs-identifier hs-var">fib</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679015913"><span class="hs-identifier hs-var">n</span></a></span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer
+</span><a href="Exemplo.html#fib"><span class="hs-identifier hs-var">fib</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621679015913"><span class="hs-identifier hs-var">n</span></a></span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span class="annot"><span class="annottext">Integer
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span>
+</span><span id="line-55"></span><span>
+</span><span id="line-56"></span><span>
+</span><span id="line-57"></span></pre></body></html>
