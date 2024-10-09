@@ -209,6 +209,8 @@ Ou seja, uma lista com o nome de todas as pessoas, exceto a(s) que se encontre(m
 ["Afonso"]
 >>> pessoasNorte [(Pos "Afonso" (0, 0)), (Pos "Bernardo" (5, 5)), (Pos "Carlos" (5, -5))]
 ["Bernardo", "Afonso"]
+>>> pessoasNorte [(Pos "Afonso" (0, 0)), (Pos "Bernardo" (5, 0)), (Pos "Carlos" (-5, 0))]
+[]
 
 == __Propriedades:__
 prop> pessoasNorte [] = []

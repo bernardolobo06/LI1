@@ -425,18 +425,20 @@ Ou seja, uma lista com o nome de todas as pessoas, exceto a(s) que se encontre(m
 [&quot;Afonso&quot;]
 &gt;&gt;&gt; pessoasNorte [(Pos &quot;Afonso&quot; (0, 0)), (Pos &quot;Bernardo&quot; (5, 5)), (Pos &quot;Carlos&quot; (5, -5))]
 [&quot;Bernardo&quot;, &quot;Afonso&quot;]
+&gt;&gt;&gt; pessoasNorte [(Pos &quot;Afonso&quot; (0, 0)), (Pos &quot;Bernardo&quot; (5, 0)), (Pos &quot;Carlos&quot; (-5, 0))]
+[]
 
 == __Propriedades:__
 prop&gt; pessoasNorte [] = []
 prop&gt; pessoasNorte [Pos name (x, y)] = [name]
 -}</span></span><span>
-</span><span id="line-217"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-type">pessoasNorte</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span>
-</span><span id="line-218"></span><span id="pessoasNorte"><span class="annot"><span class="annottext">pessoasNorte :: [PosicaoPessoa] -&gt; [String]
+</span><span id="line-219"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-type">pessoasNorte</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span>
+</span><span id="line-220"></span><span id="pessoasNorte"><span class="annot"><span class="annottext">pessoasNorte :: [PosicaoPessoa] -&gt; [String]
 </span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var hs-var">pessoasNorte</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span>
-</span><span id="line-219"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022366"><span class="annot"><span class="annottext">String
+</span><span id="line-221"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022366"><span class="annot"><span class="annottext">String
 </span><a href="#local-6989586621679022366"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="annot"><span class="annottext">Coordenada
 </span><span class="hs-identifier">_</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-220"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022367"><span class="annot"><span class="annottext">String
+</span><span id="line-222"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022367"><span class="annot"><span class="annottext">String
 </span><a href="#local-6989586621679022367"><span class="hs-identifier hs-var">name1</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022368"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679022368"><span class="hs-identifier hs-var">x1</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022369"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022370"><span class="annot"><span class="annottext">String
@@ -444,7 +446,7 @@ prop&gt; pessoasNorte [Pos name (x, y)] = [name]
 </span><a href="#local-6989586621679022371"><span class="hs-identifier hs-var">x2</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022372"><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679022372"><span class="hs-identifier hs-var">y2</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621679022373"><span class="annot"><span class="annottext">[PosicaoPessoa]
 </span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span>
-</span><span id="line-221"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
+</span><span id="line-223"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&lt;</span></span><span> </span><span class="annot"><span class="annottext">Double
@@ -460,7 +462,7 @@ forall a. a -&gt; [a] -&gt; [a]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
 </span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-222"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
+</span><span id="line-224"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
 </span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double
@@ -476,7 +478,7 @@ forall a. a -&gt; [a] -&gt; [a]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
 </span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-223"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span id="line-225"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; [String]
 </span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
