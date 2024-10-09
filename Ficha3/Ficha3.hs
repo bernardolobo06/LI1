@@ -31,7 +31,7 @@ module Ficha3 where
 == __Propriedades:__
 prop> remove [] _ = []
 -}
-remove :: [String] -> Char -> [String]  -- ^ Exercício 1
+remove :: [String] -> Char -> [String]
 remove [] _ = []
 remove (h:t) char
     | head h /= char = h : remove t char
