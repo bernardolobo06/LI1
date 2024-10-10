@@ -223,3 +223,57 @@ pessoasNorte ((Pos name1 (x1, y1)) : (Pos name2 (x2, y2)) : t)
   | y1 < y2 = name2 : pessoasNorte (Pos name1 (x1, y1) : t)
   | y1 > y2 = name1 : pessoasNorte (Pos name2 (x2, y2) : t)
   | otherwise = pessoasNorte (Pos name1 (x1, y1) : t)
+
+
+{-| A função 'nDir' recebe uma lista e desloca cada elemento da lista, n posições para a direita.
+
+==  __Notas:__
+* Apenas funciona se o @n@ for menor ou igual ao comprimento da lista.
+* Na utilização de um @n@ superior ao comprimento da lista é devolvida a própria lista.
+* Na utilização de um @n@ igual ou menor que 0 é devolvida a própria lista.
+
+==  __Exemplos de utilização:__
+>>> nDir [1, 2, 3, 4, 5] 6
+[1, 2, 3, 4, 5]
+>>> nDir [1, 2, 3, 4, 5] 2
+[4, 5, 1, 2, 3]
+>>> nDir [1, 2, 3, 4, 5] 0
+[1, 2, 3, 4, 5]
+>>> nDir [1, 2, 3, 4, 5] -2
+[1, 2, 3, 4, 5]
+
+== __Propriedades:__
+prop> nDir [] _ = []
+-}
+nDir :: [a] -> Int -> [a]
+nDir [] _ = []
+nDir (h:t) n
+  | length (h:t) - n > 0 = nDir (t ++ [h]) (n+1)
+  | otherwise = h:t
+
+
+{-| A função 'nEsq' recebe uma lista e desloca cada elemento da lista, n posições para a esquerda.
+
+==  __Notas:__
+* Apenas funciona se o @n@ for menor ou igual ao comprimento da lista.
+* Na utilização de um @n@ superior ao comprimento da lista é devolvida a própria lista.
+* Na utilização de um @n@ igual ou menor que 0 é devolvida a própria lista.
+
+==  __Exemplos de utilização:__
+>>> nEsq [1, 2, 3, 4, 5] 6
+[1, 2, 3, 4, 5]
+>>> nEsq [1, 2, 3, 4, 5] 2
+[3, 4, 5, 1, 2]
+>>> nEsq [1, 2, 3, 4, 5] 0
+[1, 2, 3, 4, 5]
+>>> nEsq [1, 2, 3, 4, 5] -2
+[1, 2, 3, 4, 5]
+
+== __Propriedades:__
+prop> nEsq [] _ = []
+-}
+nEsq :: [a] -> Int -> [a]
+nEsq [] _ = []
+nEsq (h:t) n
+  | n > 0 = nEsq (t ++ [h]) (n-1)
+  | otherwise = h:t
