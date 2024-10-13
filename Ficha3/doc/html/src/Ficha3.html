@@ -35,28 +35,28 @@ prop&gt; remove [] _ = []
 </span><span id="line-35"></span><span id="remove"><span class="annot"><span class="annottext">remove :: [String] -&gt; Char -&gt; [String]
 </span><a href="Ficha3.html#remove"><span class="hs-identifier hs-var hs-var">remove</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-36"></span><span class="annot"><a href="Ficha3.html#remove"><span class="hs-identifier hs-var">remove</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022255"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022255"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022256"><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679022256"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022257"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679022257"><span class="hs-identifier hs-var">char</span></a></span></span><span>
+</span><span id="line-36"></span><span class="annot"><a href="Ficha3.html#remove"><span class="hs-identifier hs-var">remove</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022375"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022375"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022376"><span class="annot"><span class="annottext">[String]
+</span><a href="#local-6989586621679022376"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022377"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679022377"><span class="hs-identifier hs-var">char</span></a></span></span><span>
 </span><span id="line-37"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String -&gt; Char
 forall a. HasCallStack =&gt; [a] -&gt; a
 </span><span class="hs-identifier hs-var">head</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022255"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
+</span><a href="#local-6989586621679022375"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">/=</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679022257"><span class="hs-identifier hs-var">char</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022255"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679022377"><span class="hs-identifier hs-var">char</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022375"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Char -&gt; [String]
 </span><a href="Ficha3.html#remove"><span class="hs-identifier hs-var">remove</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679022256"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679022257"><span class="hs-identifier hs-var">char</span></a></span><span>
+</span><a href="#local-6989586621679022376"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679022377"><span class="hs-identifier hs-var">char</span></a></span><span>
 </span><span id="line-38"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; Char -&gt; [String]
 </span><a href="Ficha3.html#remove"><span class="hs-identifier hs-var">remove</span></a></span><span> </span><span class="annot"><span class="annottext">[String]
-</span><a href="#local-6989586621679022256"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679022257"><span class="hs-identifier hs-var">char</span></a></span><span>
+</span><a href="#local-6989586621679022376"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679022377"><span class="hs-identifier hs-var">char</span></a></span><span>
 </span><span id="line-39"></span><span>
 </span><span id="line-40"></span><span>
 </span><span id="line-41"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'addTuple' recebe uma lista de pares de inteiros e adiciona um valor dado &#224; primeira componente de cada par.
@@ -78,24 +78,24 @@ prop&gt; addTuple [] _ = []
 </span><span id="line-57"></span><span id="addTuple"><span class="annot"><span class="annottext">addTuple :: [(Int, Int)] -&gt; Int -&gt; [(Int, Int)]
 </span><a href="Ficha3.html#addTuple"><span class="hs-identifier hs-var hs-var">addTuple</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-58"></span><span class="annot"><a href="Ficha3.html#addTuple"><span class="hs-identifier hs-var">addTuple</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022261"><span class="annot"><span class="annottext">(Int, Int)
-</span><a href="#local-6989586621679022261"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022262"><span class="annot"><span class="annottext">[(Int, Int)]
-</span><a href="#local-6989586621679022262"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022263"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679022263"><span class="hs-identifier hs-var">num</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Int, Int) -&gt; Int
+</span><span id="line-58"></span><span class="annot"><a href="Ficha3.html#addTuple"><span class="hs-identifier hs-var">addTuple</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022381"><span class="annot"><span class="annottext">(Int, Int)
+</span><a href="#local-6989586621679022381"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022382"><span class="annot"><span class="annottext">[(Int, Int)]
+</span><a href="#local-6989586621679022382"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022383"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022383"><span class="hs-identifier hs-var">num</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Int, Int) -&gt; Int
 forall a b. (a, b) -&gt; a
 </span><span class="hs-identifier hs-var">fst</span></span><span> </span><span class="annot"><span class="annottext">(Int, Int)
-</span><a href="#local-6989586621679022261"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679022381"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679022263"><span class="hs-identifier hs-var">num</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">(Int, Int) -&gt; Int
+</span><a href="#local-6989586621679022383"><span class="hs-identifier hs-var">num</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">(Int, Int) -&gt; Int
 forall a b. (a, b) -&gt; b
 </span><span class="hs-identifier hs-var">snd</span></span><span> </span><span class="annot"><span class="annottext">(Int, Int)
-</span><a href="#local-6989586621679022261"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Int, Int) -&gt; [(Int, Int)] -&gt; [(Int, Int)]
+</span><a href="#local-6989586621679022381"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Int, Int) -&gt; [(Int, Int)] -&gt; [(Int, Int)]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[(Int, Int)] -&gt; Int -&gt; [(Int, Int)]
 </span><a href="Ficha3.html#addTuple"><span class="hs-identifier hs-var">addTuple</span></a></span><span> </span><span class="annot"><span class="annottext">[(Int, Int)]
-</span><a href="#local-6989586621679022262"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679022263"><span class="hs-identifier hs-var">num</span></a></span><span>
+</span><a href="#local-6989586621679022382"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022383"><span class="hs-identifier hs-var">num</span></a></span><span>
 </span><span id="line-59"></span><span>
 </span><span id="line-60"></span><span>
 </span><span id="line-61"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'maxSndTuple' recebe uma lista, n&#227;o vazia, de pares de inteiros e calcula qual o maior valor da segunda componente.
@@ -109,34 +109,34 @@ forall a. a -&gt; [a] -&gt; [a]
 == __Propriedades:__
 prop&gt; maxSndTuple [(a, b)] = b
 -}</span></span><span>
-</span><span id="line-72"></span><span class="annot"><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-type">maxSndTuple</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span>
+</span><span id="line-72"></span><span class="annot"><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-type">maxSndTuple</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span>
 </span><span id="line-73"></span><span id="maxSndTuple"><span class="annot"><span class="annottext">maxSndTuple :: [(Int, Int)] -&gt; Int
-</span><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-var hs-var">maxSndTuple</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span id="local-6989586621679022268"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679022268"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022269"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679022269"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679022269"><span class="hs-identifier hs-var">b</span></a></span><span>
-</span><span id="line-74"></span><span class="annot"><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-var">maxSndTuple</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022270"><span class="annot"><span class="annottext">(Int, Int)
-</span><a href="#local-6989586621679022270"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022271"><span class="annot"><span class="annottext">[(Int, Int)]
-</span><a href="#local-6989586621679022271"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-var hs-var">maxSndTuple</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span id="local-6989586621679022388"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022388"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022389"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022389"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022389"><span class="hs-identifier hs-var">b</span></a></span><span>
+</span><span id="line-74"></span><span class="annot"><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-var">maxSndTuple</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022390"><span class="annot"><span class="annottext">(Int, Int)
+</span><a href="#local-6989586621679022390"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022391"><span class="annot"><span class="annottext">[(Int, Int)]
+</span><a href="#local-6989586621679022391"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Ord a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">max</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Int, Int) -&gt; Int
 forall a b. (a, b) -&gt; b
 </span><span class="hs-identifier hs-var">snd</span></span><span> </span><span class="annot"><span class="annottext">(Int, Int)
-</span><a href="#local-6989586621679022270"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[(Int, Int)] -&gt; Int
+</span><a href="#local-6989586621679022390"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[(Int, Int)] -&gt; Int
 </span><a href="Ficha3.html#maxSndTuple"><span class="hs-identifier hs-var">maxSndTuple</span></a></span><span> </span><span class="annot"><span class="annottext">[(Int, Int)]
-</span><a href="#local-6989586621679022271"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022391"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-75"></span><span>
 </span><span id="line-76"></span><span>
 </span><span id="line-77"></span><span class="annot"><span class="hs-comment">-- | O @type@ 'Nome' &#233; sin&#243;nimo de uma @string@ (representativa de uma identidade).</span></span><span>
-</span><span id="line-78"></span><span class="hs-keyword">type</span><span> </span><span id="Nome"><span class="annot"><a href="Ficha3.html#Nome"><span class="hs-identifier hs-var">Nome</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>             </span><span>
+</span><span id="line-78"></span><span class="hs-keyword">type</span><span> </span><span id="Nome"><span class="annot"><a href="Ficha3.html#Nome"><span class="hs-identifier hs-var">Nome</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-79"></span><span class="annot"><span class="hs-comment">-- | O @type@ 'Coordenada' &#233; sin&#243;nimo de um par de @doubles@ (representativo de um conjunto de coordenadas cartesianas).       </span></span><span>
-</span><span id="line-80"></span><span class="hs-keyword">type</span><span> </span><span id="Coordenada"><span class="annot"><a href="Ficha3.html#Coordenada"><span class="hs-identifier hs-var">Coordenada</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span class="hs-special">)</span><span>                           </span><span>
+</span><span id="line-80"></span><span class="hs-keyword">type</span><span> </span><span id="Coordenada"><span class="annot"><a href="Ficha3.html#Coordenada"><span class="hs-identifier hs-var">Coordenada</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span class="hs-special">)</span><span>
 </span><span id="line-81"></span><span class="annot"><span class="hs-comment">-- | O @data type@ 'Movimento' &#233; a defini&#231;&#227;o de um novo tipo de dados (representativo de um movimento segundo os pontos cardeais).     </span></span><span>
 </span><span id="line-82"></span><span class="hs-keyword">data</span><span> </span><span id="Movimento"><span class="annot"><a href="Ficha3.html#Movimento"><span class="hs-identifier hs-var">Movimento</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="N"><span class="annot"><a href="Ficha3.html#N"><span class="hs-identifier hs-var">N</span></a></span></span><span>  </span><span class="annot"><span class="hs-comment">-- ^(North) --&gt; y + 1</span></span><span>
 </span><span id="line-83"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="S"><span class="annot"><a href="Ficha3.html#S"><span class="hs-identifier hs-var">S</span></a></span></span><span>  </span><span class="annot"><span class="hs-comment">-- ^(South) --&gt; y - 1</span></span><span>
 </span><span id="line-84"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="E"><span class="annot"><a href="Ficha3.html#E"><span class="hs-identifier hs-var">E</span></a></span></span><span>  </span><span class="annot"><span class="hs-comment">-- ^(East) --&gt; x + 1</span></span><span>
 </span><span id="line-85"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="W"><span class="annot"><a href="Ficha3.html#W"><span class="hs-identifier hs-var">W</span></a></span></span><span>  </span><span class="annot"><span class="hs-comment">-- ^(West) --&gt; x - 1</span></span><span>
-</span><span id="line-86"></span><span>              </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022279"><span id="local-6989586621679022281"><span id="local-6989586621679022285"><span class="annot"><span class="annottext">Int -&gt; Movimento -&gt; ShowS
+</span><span id="line-86"></span><span>              </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022399"><span id="local-6989586621679022401"><span id="local-6989586621679022405"><span class="annot"><span class="annottext">Int -&gt; Movimento -&gt; ShowS
 [Movimento] -&gt; ShowS
 Movimento -&gt; String
 (Int -&gt; Movimento -&gt; ShowS)
@@ -151,7 +151,7 @@ $cshow :: Movimento -&gt; String
 show :: Movimento -&gt; String
 $cshowList :: [Movimento] -&gt; ShowS
 showList :: [Movimento] -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span id="local-6989586621679022289"><span id="local-6989586621679022291"><span class="annot"><span class="annottext">Movimento -&gt; Movimento -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span id="local-6989586621679022409"><span id="local-6989586621679022411"><span class="annot"><span class="annottext">Movimento -&gt; Movimento -&gt; Bool
 (Movimento -&gt; Movimento -&gt; Bool)
 -&gt; (Movimento -&gt; Movimento -&gt; Bool) -&gt; Eq Movimento
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -159,11 +159,11 @@ $c== :: Movimento -&gt; Movimento -&gt; Bool
 == :: Movimento -&gt; Movimento -&gt; Bool
 $c/= :: Movimento -&gt; Movimento -&gt; Bool
 /= :: Movimento -&gt; Movimento -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>   </span><span>
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-87"></span><span class="annot"><span class="hs-comment">-- | O @type@ 'Movimentos' &#233; sin&#243;nimo de uma lista do tipo 'Movimento' (representativa de uma sequ&#234;ncia finita de movimentos).       </span></span><span>
-</span><span id="line-88"></span><span class="hs-keyword">type</span><span> </span><span id="Movimentos"><span class="annot"><a href="Ficha3.html#Movimentos"><span class="hs-identifier hs-var">Movimentos</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#Movimento"><span class="hs-identifier hs-type">Movimento</span></a></span><span class="hs-special">]</span><span>               </span><span>
+</span><span id="line-88"></span><span class="hs-keyword">type</span><span> </span><span id="Movimentos"><span class="annot"><a href="Ficha3.html#Movimentos"><span class="hs-identifier hs-var">Movimentos</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#Movimento"><span class="hs-identifier hs-type">Movimento</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-89"></span><span class="annot"><span class="hs-comment">-- | O @data type@ 'PosicaoPessoa' &#233; a defini&#231;&#227;o de um novo tipo de dados (representativo de um conjunto de coordenadas cartesianas referentes a uma identidade).               </span></span><span>
-</span><span id="line-90"></span><span class="hs-keyword">data</span><span> </span><span id="PosicaoPessoa"><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-var">PosicaoPessoa</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Pos"><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span></span><span> </span><span class="annot"><a href="Ficha3.html#Nome"><span class="hs-identifier hs-type">Nome</span></a></span><span> </span><span class="annot"><a href="Ficha3.html#Coordenada"><span class="hs-identifier hs-type">Coordenada</span></a></span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022298"><span id="local-6989586621679022308"><span id="local-6989586621679022312"><span class="annot"><span class="annottext">Int -&gt; PosicaoPessoa -&gt; ShowS
+</span><span id="line-90"></span><span class="hs-keyword">data</span><span> </span><span id="PosicaoPessoa"><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-var">PosicaoPessoa</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="Pos"><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span></span><span> </span><span class="annot"><a href="Ficha3.html#Nome"><span class="hs-identifier hs-type">Nome</span></a></span><span> </span><span class="annot"><a href="Ficha3.html#Coordenada"><span class="hs-identifier hs-type">Coordenada</span></a></span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022418"><span id="local-6989586621679022428"><span id="local-6989586621679022432"><span class="annot"><span class="annottext">Int -&gt; PosicaoPessoa -&gt; ShowS
 [PosicaoPessoa] -&gt; ShowS
 PosicaoPessoa -&gt; String
 (Int -&gt; PosicaoPessoa -&gt; ShowS)
@@ -178,7 +178,7 @@ $cshow :: PosicaoPessoa -&gt; String
 show :: PosicaoPessoa -&gt; String
 $cshowList :: [PosicaoPessoa] -&gt; ShowS
 showList :: [PosicaoPessoa] -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span id="local-6989586621679022317"><span id="local-6989586621679022325"><span class="annot"><span class="annottext">PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span id="local-6989586621679022437"><span id="local-6989586621679022445"><span class="annot"><span class="annottext">PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
 (PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool)
 -&gt; (PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool) -&gt; Eq PosicaoPessoa
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -186,7 +186,7 @@ $c== :: PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
 == :: PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
 $c/= :: PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
 /= :: PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>     </span><span>
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-91"></span><span>
 </span><span id="line-92"></span><span>
 </span><span id="line-93"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'auxCoord' recebe um @data type@ 'PosicaoPessoa' e um 'Movimento' e calcula novas coordenadas.
@@ -203,54 +203,54 @@ $c/= :: PosicaoPessoa -&gt; PosicaoPessoa -&gt; Bool
 -}</span></span><span>
 </span><span id="line-105"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-type">auxCoord</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Ficha3.html#Movimento"><span class="hs-identifier hs-type">Movimento</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span>
 </span><span id="line-106"></span><span id="auxCoord"><span class="annot"><span class="annottext">auxCoord :: PosicaoPessoa -&gt; Movimento -&gt; PosicaoPessoa
-</span><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var hs-var">auxCoord</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022330"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022330"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022331"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022331"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022332"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022332"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var hs-var">auxCoord</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022450"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022450"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022451"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022451"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022452"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022452"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
 </span><a href="Ficha3.html#N"><span class="hs-identifier hs-var">N</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022330"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022331"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022332"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679022450"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022451"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022452"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">1</span></span><span class="hs-special">)</span><span>
-</span><span id="line-107"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022333"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022333"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022334"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022334"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022335"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022335"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><span id="line-107"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022453"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022453"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022454"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022454"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022455"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022455"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
 </span><a href="Ficha3.html#S"><span class="hs-identifier hs-var">S</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022333"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022334"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022335"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679022453"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022454"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022455"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">1</span></span><span class="hs-special">)</span><span>
-</span><span id="line-108"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022336"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022336"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022337"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022337"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022338"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022338"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><span id="line-108"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022456"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022456"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022457"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022457"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022458"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022458"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
 </span><a href="Ficha3.html#E"><span class="hs-identifier hs-var">E</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022336"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022337"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679022456"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022457"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">1</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022338"><span class="hs-identifier hs-var">y</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-109"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022339"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022339"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022340"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022340"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022341"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022341"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><a href="#local-6989586621679022458"><span class="hs-identifier hs-var">y</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-109"></span><span class="annot"><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022459"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022459"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022460"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022460"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022461"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022461"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Movimento
 </span><a href="Ficha3.html#W"><span class="hs-identifier hs-var">W</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022339"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022340"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679022459"><span class="hs-identifier hs-var">name</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022460"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Double
 </span><span class="hs-number">1</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022341"><span class="hs-identifier hs-var">y</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022461"><span class="hs-identifier hs-var">y</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-110"></span><span>
 </span><span id="line-111"></span><span>
 </span><span id="line-112"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'posicoesM' recebe uma lista de posi&#231;&#245;es de pessoas e um movimento e atualiza as coordenadas de todas as posi&#231;&#245;es.
@@ -276,18 +276,18 @@ prop&gt; posicoesM [] _ = []
 </span><span id="line-132"></span><span id="posicoesM"><span class="annot"><span class="annottext">posicoesM :: [PosicaoPessoa] -&gt; Movimento -&gt; [PosicaoPessoa]
 </span><a href="Ficha3.html#posicoesM"><span class="hs-identifier hs-var hs-var">posicoesM</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Movimento
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-133"></span><span class="annot"><a href="Ficha3.html#posicoesM"><span class="hs-identifier hs-var">posicoesM</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022343"><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022343"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022344"><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022344"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022345"><span class="annot"><span class="annottext">Movimento
-</span><a href="#local-6989586621679022345"><span class="hs-identifier hs-var">mov</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; Movimento -&gt; PosicaoPessoa
+</span><span id="line-133"></span><span class="annot"><a href="Ficha3.html#posicoesM"><span class="hs-identifier hs-var">posicoesM</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022463"><span class="annot"><span class="annottext">PosicaoPessoa
+</span><a href="#local-6989586621679022463"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022464"><span class="annot"><span class="annottext">[PosicaoPessoa]
+</span><a href="#local-6989586621679022464"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022465"><span class="annot"><span class="annottext">Movimento
+</span><a href="#local-6989586621679022465"><span class="hs-identifier hs-var">mov</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; Movimento -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022343"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Movimento
-</span><a href="#local-6989586621679022345"><span class="hs-identifier hs-var">mov</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022463"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><a href="#local-6989586621679022465"><span class="hs-identifier hs-var">mov</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; Movimento -&gt; [PosicaoPessoa]
 </span><a href="Ficha3.html#posicoesM"><span class="hs-identifier hs-var">posicoesM</span></a></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022344"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Movimento
-</span><a href="#local-6989586621679022345"><span class="hs-identifier hs-var">mov</span></a></span><span>
+</span><a href="#local-6989586621679022464"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><a href="#local-6989586621679022465"><span class="hs-identifier hs-var">mov</span></a></span><span>
 </span><span id="line-134"></span><span>
 </span><span id="line-135"></span><span>
 </span><span id="line-136"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'posicao' recebe um @data type@ 'PosicaoPessoa' e uma lista de movimentos e calcula a posi&#231;&#227;o da pessoa depois de executar todos os movimentos.
@@ -307,18 +307,18 @@ prop&gt; posicao pos [] = pos
 -}</span></span><span>
 </span><span id="line-151"></span><span class="annot"><a href="Ficha3.html#posicao"><span class="hs-identifier hs-type">posicao</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Ficha3.html#Movimentos"><span class="hs-identifier hs-type">Movimentos</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span>
 </span><span id="line-152"></span><span id="posicao"><span class="annot"><span class="annottext">posicao :: PosicaoPessoa -&gt; [Movimento] -&gt; PosicaoPessoa
-</span><a href="Ficha3.html#posicao"><span class="hs-identifier hs-var hs-var">posicao</span></a></span></span><span> </span><span id="local-6989586621679022347"><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022347"><span class="hs-identifier hs-var">pos</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022347"><span class="hs-identifier hs-var">pos</span></a></span><span>
-</span><span id="line-153"></span><span class="annot"><a href="Ficha3.html#posicao"><span class="hs-identifier hs-var">posicao</span></a></span><span> </span><span id="local-6989586621679022348"><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022348"><span class="hs-identifier hs-var">pos</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022349"><span class="annot"><span class="annottext">Movimento
-</span><a href="#local-6989586621679022349"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022350"><span class="annot"><span class="annottext">[Movimento]
-</span><a href="#local-6989586621679022350"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [Movimento] -&gt; PosicaoPessoa
-</span><a href="Ficha3.html#posicao"><span class="hs-identifier hs-var">posicao</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; Movimento -&gt; PosicaoPessoa
+</span><a href="Ficha3.html#posicao"><span class="hs-identifier hs-var hs-var">posicao</span></a></span></span><span> </span><span id="local-6989586621679022467"><span class="annot"><span class="annottext">PosicaoPessoa
+</span><a href="#local-6989586621679022467"><span class="hs-identifier hs-var">pos</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa
+</span><a href="#local-6989586621679022467"><span class="hs-identifier hs-var">pos</span></a></span><span>
+</span><span id="line-153"></span><span class="annot"><a href="Ficha3.html#posicao"><span class="hs-identifier hs-var">posicao</span></a></span><span> </span><span id="local-6989586621679022468"><span class="annot"><span class="annottext">PosicaoPessoa
+</span><a href="#local-6989586621679022468"><span class="hs-identifier hs-var">pos</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022469"><span class="annot"><span class="annottext">Movimento
+</span><a href="#local-6989586621679022469"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022470"><span class="annot"><span class="annottext">[Movimento]
+</span><a href="#local-6989586621679022470"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>  </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; Movimento -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#auxCoord"><span class="hs-identifier hs-var">auxCoord</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022348"><span class="hs-identifier hs-var">pos</span></a></span><span> </span><span class="annot"><span class="annottext">Movimento
-</span><a href="#local-6989586621679022349"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Movimento]
-</span><a href="#local-6989586621679022350"><span class="hs-identifier hs-var">t</span></a></span><span>
+</span><a href="#local-6989586621679022468"><span class="hs-identifier hs-var">pos</span></a></span><span> </span><span class="annot"><span class="annottext">Movimento
+</span><a href="#local-6989586621679022469"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [Movimento] -&gt; PosicaoPessoa
+</span><a href="Ficha3.html#posicao"><span class="hs-operator hs-var">`posicao`</span></a></span><span> </span><span class="annot"><span class="annottext">[Movimento]
+</span><a href="#local-6989586621679022470"><span class="hs-identifier hs-var">t</span></a></span><span>
 </span><span id="line-154"></span><span>
 </span><span id="line-155"></span><span>
 </span><span id="line-156"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'posicoesMs' recebe uma lista de posi&#231;&#245;es de pessoas e uma lista de movimentos e calcula a posi&#231;&#227;o de cada pessoa depois de executar todos os movimentos.
@@ -341,18 +341,18 @@ prop&gt; posicoesMs [] _ = []
 </span><span id="line-173"></span><span id="posicoesMs"><span class="annot"><span class="annottext">posicoesMs :: [PosicaoPessoa] -&gt; [Movimento] -&gt; [PosicaoPessoa]
 </span><a href="Ficha3.html#posicoesMs"><span class="hs-identifier hs-var hs-var">posicoesMs</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">[Movimento]
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-174"></span><span class="annot"><a href="Ficha3.html#posicoesMs"><span class="hs-identifier hs-var">posicoesMs</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022352"><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022352"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022353"><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022353"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022354"><span class="annot"><span class="annottext">[Movimento]
-</span><a href="#local-6989586621679022354"><span class="hs-identifier hs-var">mov</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [Movimento] -&gt; PosicaoPessoa
+</span><span id="line-174"></span><span class="annot"><a href="Ficha3.html#posicoesMs"><span class="hs-identifier hs-var">posicoesMs</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022472"><span class="annot"><span class="annottext">PosicaoPessoa
+</span><a href="#local-6989586621679022472"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022473"><span class="annot"><span class="annottext">[PosicaoPessoa]
+</span><a href="#local-6989586621679022473"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022474"><span class="annot"><span class="annottext">[Movimento]
+</span><a href="#local-6989586621679022474"><span class="hs-identifier hs-var">mov</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [Movimento] -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#posicao"><span class="hs-identifier hs-var">posicao</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022352"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">[Movimento]
-</span><a href="#local-6989586621679022354"><span class="hs-identifier hs-var">mov</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022472"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">[Movimento]
+</span><a href="#local-6989586621679022474"><span class="hs-identifier hs-var">mov</span></a></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; [Movimento] -&gt; [PosicaoPessoa]
 </span><a href="Ficha3.html#posicoesMs"><span class="hs-identifier hs-var">posicoesMs</span></a></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022353"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">[Movimento]
-</span><a href="#local-6989586621679022354"><span class="hs-identifier hs-var">mov</span></a></span><span>
+</span><a href="#local-6989586621679022473"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">[Movimento]
+</span><a href="#local-6989586621679022474"><span class="hs-identifier hs-var">mov</span></a></span><span>
 </span><span id="line-175"></span><span>
 </span><span id="line-176"></span><span>
 </span><span id="line-177"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'pessoaNorte' recebe uma lista de posi&#231;&#245;es de pessoas e indica qual a posi&#231;&#227;o mais a Norte.
@@ -375,42 +375,42 @@ prop&gt; pessoaNorte [a] = Just a
 </span><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var hs-var">pessoaNorte</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe PosicaoPessoa
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
-</span><span id="line-194"></span><span class="annot"><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var">pessoaNorte</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679022356"><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022356"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; Maybe PosicaoPessoa
+</span><span id="line-194"></span><span class="annot"><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var">pessoaNorte</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679022476"><span class="annot"><span class="annottext">PosicaoPessoa
+</span><a href="#local-6989586621679022476"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; Maybe PosicaoPessoa
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa
-</span><a href="#local-6989586621679022356"><span class="hs-identifier hs-var">a</span></a></span><span>
-</span><span id="line-195"></span><span class="annot"><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var">pessoaNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022357"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022357"><span class="hs-identifier hs-var">name1</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022358"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022358"><span class="hs-identifier hs-var">x1</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022359"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022359"><span class="hs-identifier hs-var">y1</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022360"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022360"><span class="hs-identifier hs-var">name2</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022361"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022361"><span class="hs-identifier hs-var">x2</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022362"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022362"><span class="hs-identifier hs-var">y2</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621679022363"><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022363"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022476"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><span id="line-195"></span><span class="annot"><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var">pessoaNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022477"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022477"><span class="hs-identifier hs-var">name1</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022478"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022478"><span class="hs-identifier hs-var">x1</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022479"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022479"><span class="hs-identifier hs-var">y1</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022480"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022480"><span class="hs-identifier hs-var">name2</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022481"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022481"><span class="hs-identifier hs-var">x2</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022482"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022482"><span class="hs-identifier hs-var">y2</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621679022483"><span class="annot"><span class="annottext">[PosicaoPessoa]
+</span><a href="#local-6989586621679022483"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-196"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022359"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
+</span><a href="#local-6989586621679022479"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022362"><span class="hs-identifier hs-var">y2</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; Maybe PosicaoPessoa
+</span><a href="#local-6989586621679022482"><span class="hs-identifier hs-var">y2</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; Maybe PosicaoPessoa
 </span><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var">pessoaNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022357"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022358"><span class="hs-identifier hs-var">x1</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022359"><span class="hs-identifier hs-var">y1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022477"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022478"><span class="hs-identifier hs-var">x1</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022479"><span class="hs-identifier hs-var">y1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022363"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022483"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-197"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; Maybe PosicaoPessoa
 </span><a href="Ficha3.html#pessoaNorte"><span class="hs-identifier hs-var">pessoaNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022360"><span class="hs-identifier hs-var">name2</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022361"><span class="hs-identifier hs-var">x2</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022362"><span class="hs-identifier hs-var">y2</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022480"><span class="hs-identifier hs-var">name2</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022481"><span class="hs-identifier hs-var">x2</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022482"><span class="hs-identifier hs-var">y2</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022363"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022483"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-198"></span><span>
 </span><span id="line-199"></span><span>
 </span><span id="line-200"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'pessoasNorte' recebe uma lista de posi&#231;&#245;es de pessoas e indica quais as pessoas mais a Norte.
@@ -434,57 +434,168 @@ prop&gt; pessoasNorte [Pos name (x, y)] = [name]
 -}</span></span><span>
 </span><span id="line-219"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-type">pessoasNorte</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#PosicaoPessoa"><span class="hs-identifier hs-type">PosicaoPessoa</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">]</span><span>
 </span><span id="line-220"></span><span id="pessoasNorte"><span class="annot"><span class="annottext">pessoasNorte :: [PosicaoPessoa] -&gt; [String]
-</span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var hs-var">pessoasNorte</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span>
-</span><span id="line-221"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022366"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022366"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="annot"><span class="annottext">Coordenada
+</span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var hs-var">pessoasNorte</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-221"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022486"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022486"><span class="hs-identifier hs-var">name</span></a></span></span><span> </span><span class="annot"><span class="annottext">Coordenada
 </span><span class="hs-identifier">_</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-222"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022367"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022367"><span class="hs-identifier hs-var">name1</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022368"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022368"><span class="hs-identifier hs-var">x1</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022369"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022370"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022370"><span class="hs-identifier hs-var">name2</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022371"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022371"><span class="hs-identifier hs-var">x2</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022372"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022372"><span class="hs-identifier hs-var">y2</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621679022373"><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span>
+</span><span id="line-222"></span><span class="annot"><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022487"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022487"><span class="hs-identifier hs-var">name1</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022488"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022488"><span class="hs-identifier hs-var">x1</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022489"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022489"><span class="hs-identifier hs-var">y1</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Ficha3.html#Pos"><span class="hs-identifier hs-type">Pos</span></a></span><span> </span><span id="local-6989586621679022490"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022490"><span class="hs-identifier hs-var">name2</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022491"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022491"><span class="hs-identifier hs-var">x2</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679022492"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022492"><span class="hs-identifier hs-var">y2</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621679022493"><span class="annot"><span class="annottext">[PosicaoPessoa]
+</span><a href="#local-6989586621679022493"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-223"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
+</span><a href="#local-6989586621679022489"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&lt;</span></span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022372"><span class="hs-identifier hs-var">y2</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022370"><span class="hs-identifier hs-var">name2</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679022492"><span class="hs-identifier hs-var">y2</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022490"><span class="hs-identifier hs-var">name2</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; [String]
 </span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022367"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022368"><span class="hs-identifier hs-var">x1</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022487"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022488"><span class="hs-identifier hs-var">x1</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022489"><span class="hs-identifier hs-var">y1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022493"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-224"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
+</span><a href="#local-6989586621679022489"><span class="hs-identifier hs-var">y1</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022372"><span class="hs-identifier hs-var">y2</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022367"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
+</span><a href="#local-6989586621679022492"><span class="hs-identifier hs-var">y2</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679022487"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; [String] -&gt; [String]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; [String]
 </span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022370"><span class="hs-identifier hs-var">name2</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022371"><span class="hs-identifier hs-var">x2</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022372"><span class="hs-identifier hs-var">y2</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022490"><span class="hs-identifier hs-var">name2</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022491"><span class="hs-identifier hs-var">x2</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022492"><span class="hs-identifier hs-var">y2</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679022493"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-225"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa] -&gt; [String]
 </span><a href="Ficha3.html#pessoasNorte"><span class="hs-identifier hs-var">pessoasNorte</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Coordenada -&gt; PosicaoPessoa
 </span><a href="Ficha3.html#Pos"><span class="hs-identifier hs-var">Pos</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679022367"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022368"><span class="hs-identifier hs-var">x1</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679022369"><span class="hs-identifier hs-var">y1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
+</span><a href="#local-6989586621679022487"><span class="hs-identifier hs-var">name1</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022488"><span class="hs-identifier hs-var">x1</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679022489"><span class="hs-identifier hs-var">y1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">PosicaoPessoa -&gt; [PosicaoPessoa] -&gt; [PosicaoPessoa]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span> </span><span class="annot"><span class="annottext">[PosicaoPessoa]
-</span><a href="#local-6989586621679022373"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span></pre></body></html>
+</span><a href="#local-6989586621679022493"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-226"></span><span>
+</span><span id="line-227"></span><span>
+</span><span id="line-228"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'nDir' recebe uma lista e desloca cada elemento da lista, n posi&#231;&#245;es para a direita.
+
+==  __Notas:__
+* Apenas funciona se o @n@ for menor ou igual ao comprimento da lista.
+* Na utiliza&#231;&#227;o de um @n@ superior ao comprimento da lista &#233; devolvida a pr&#243;pria lista.
+* Na utiliza&#231;&#227;o de um @n@ igual ou menor que 0 &#233; devolvida a pr&#243;pria lista.
+
+==  __Exemplos de utiliza&#231;&#227;o:__
+&gt;&gt;&gt; nDir [1, 2, 3, 4, 5] 6
+[1, 2, 3, 4, 5]
+&gt;&gt;&gt; nDir [1, 2, 3, 4, 5] 2
+[4, 5, 1, 2, 3]
+&gt;&gt;&gt; nDir [1, 2, 3, 4, 5] 0
+[1, 2, 3, 4, 5]
+&gt;&gt;&gt; nDir [1, 2, 3, 4, 5] -2
+[1, 2, 3, 4, 5]
+
+== __Propriedades:__
+prop&gt; nDir [] _ = []
+-}</span></span><span>
+</span><span id="line-248"></span><span id="local-6989586621679022347"><span class="annot"><a href="Ficha3.html#nDir"><span class="hs-identifier hs-type">nDir</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679022347"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679022347"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-249"></span><span id="nDir"><span class="annot"><span class="annottext">nDir :: forall a. [a] -&gt; Int -&gt; [a]
+</span><a href="Ficha3.html#nDir"><span class="hs-identifier hs-var hs-var">nDir</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-250"></span><span class="annot"><a href="Ficha3.html#nDir"><span class="hs-identifier hs-var">nDir</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022503"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022503"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022504"><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022504"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022505"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022505"><span class="hs-identifier hs-var">n</span></a></span></span><span>
+</span><span id="line-251"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">[a] -&gt; Int
+forall a. [a] -&gt; Int
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
+</span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022503"><span class="hs-identifier hs-var">h</span></a></span><span class="annot"><span class="annottext">a -&gt; [a] -&gt; [a]
+forall a. a -&gt; [a] -&gt; [a]
+</span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022504"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022505"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+forall a. Ord a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[a] -&gt; Int -&gt; [a]
+forall a. [a] -&gt; Int -&gt; [a]
+</span><a href="Ficha3.html#nDir"><span class="hs-identifier hs-var">nDir</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022504"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">[a] -&gt; [a] -&gt; [a]
+forall a. [a] -&gt; [a] -&gt; [a]
+</span><span class="hs-operator hs-var">++</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022503"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022505"><span class="hs-identifier hs-var">n</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">+</span></span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">1</span></span><span class="hs-special">)</span><span>
+</span><span id="line-252"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022503"><span class="hs-identifier hs-var">h</span></a></span><span class="annot"><span class="annottext">a -&gt; [a] -&gt; [a]
+forall a. a -&gt; [a] -&gt; [a]
+</span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022504"><span class="hs-identifier hs-var">t</span></a></span><span>
+</span><span id="line-253"></span><span>
+</span><span id="line-254"></span><span>
+</span><span id="line-255"></span><span class="annot"><span class="hs-comment">{-| A fun&#231;&#227;o 'nEsq' recebe uma lista e desloca cada elemento da lista, n posi&#231;&#245;es para a esquerda.
+
+==  __Notas:__
+* Apenas funciona se o @n@ for menor ou igual ao comprimento da lista.
+* Na utiliza&#231;&#227;o de um @n@ superior ao comprimento da lista &#233; devolvida a pr&#243;pria lista.
+* Na utiliza&#231;&#227;o de um @n@ igual ou menor que 0 &#233; devolvida a pr&#243;pria lista.
+
+==  __Exemplos de utiliza&#231;&#227;o:__
+&gt;&gt;&gt; nEsq [1, 2, 3, 4, 5] 6
+[1, 2, 3, 4, 5]
+&gt;&gt;&gt; nEsq [1, 2, 3, 4, 5] 2
+[3, 4, 5, 1, 2]
+&gt;&gt;&gt; nEsq [1, 2, 3, 4, 5] 0
+[1, 2, 3, 4, 5]
+&gt;&gt;&gt; nEsq [1, 2, 3, 4, 5] -2
+[1, 2, 3, 4, 5]
+
+== __Propriedades:__
+prop&gt; nEsq [] _ = []
+-}</span></span><span>
+</span><span id="line-275"></span><span id="local-6989586621679022508"><span class="annot"><a href="Ficha3.html#nEsq"><span class="hs-identifier hs-type">nEsq</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679022508"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679022508"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-276"></span><span id="nEsq"><span class="annot"><span class="annottext">nEsq :: forall a. [a] -&gt; Int -&gt; [a]
+</span><a href="Ficha3.html#nEsq"><span class="hs-identifier hs-var hs-var">nEsq</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
+</span><span id="line-277"></span><span class="annot"><a href="Ficha3.html#nEsq"><span class="hs-identifier hs-var">nEsq</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679022513"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022513"><span class="hs-identifier hs-var">h</span></a></span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span id="local-6989586621679022514"><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022514"><span class="hs-identifier hs-var">t</span></a></span></span><span class="hs-special">)</span><span> </span><span id="local-6989586621679022515"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022515"><span class="hs-identifier hs-var">n</span></a></span></span><span>
+</span><span id="line-278"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022515"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+forall a. Ord a =&gt; a -&gt; a -&gt; Bool
+</span><span class="hs-operator hs-var">&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">0</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[a] -&gt; Int -&gt; [a]
+forall a. [a] -&gt; Int -&gt; [a]
+</span><a href="Ficha3.html#nEsq"><span class="hs-identifier hs-var">nEsq</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022514"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">[a] -&gt; [a] -&gt; [a]
+forall a. [a] -&gt; [a] -&gt; [a]
+</span><span class="hs-operator hs-var">++</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022513"><span class="hs-identifier hs-var">h</span></a></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679022515"><span class="hs-identifier hs-var">n</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-glyph hs-var">-</span></span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">1</span></span><span class="hs-special">)</span><span>
+</span><span id="line-279"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621679022513"><span class="hs-identifier hs-var">h</span></a></span><span class="annot"><span class="annottext">a -&gt; [a] -&gt; [a]
+forall a. a -&gt; [a] -&gt; [a]
+</span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">[a]
+</span><a href="#local-6989586621679022514"><span class="hs-identifier hs-var">t</span></a></span></pre></body></html>
