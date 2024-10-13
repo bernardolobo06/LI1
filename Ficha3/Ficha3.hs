@@ -69,25 +69,25 @@ addTuple (h:t) num = (fst h + num, snd h) : addTuple t num
 == __Propriedades:__
 prop> maxSndTuple [(a, b)] = b
 -}
-maxSndTuple :: [(Int, Int)] -> Int 
+maxSndTuple :: [(Int, Int)] -> Int
 maxSndTuple [(a, b)] = b
 maxSndTuple (h:t) = max (snd h) (maxSndTuple t)
 
 
 -- | O @type@ 'Nome' é sinónimo de uma @string@ (representativa de uma identidade).
-type Nome = String             
+type Nome = String
 -- | O @type@ 'Coordenada' é sinónimo de um par de @doubles@ (representativo de um conjunto de coordenadas cartesianas).       
-type Coordenada = (Double, Double)                           
+type Coordenada = (Double, Double)
 -- | O @data type@ 'Movimento' é a definição de um novo tipo de dados (representativo de um movimento segundo os pontos cardeais).     
 data Movimento = N  -- ^(North) --> y + 1
                | S  -- ^(South) --> y - 1
                | E  -- ^(East) --> x + 1
                | W  -- ^(West) --> x - 1
-              deriving (Show,Eq)   
+              deriving (Show,Eq)
 -- | O @type@ 'Movimentos' é sinónimo de uma lista do tipo 'Movimento' (representativa de uma sequência finita de movimentos).       
-type Movimentos = [Movimento]               
+type Movimentos = [Movimento]
 -- | O @data type@ 'PosicaoPessoa' é a definição de um novo tipo de dados (representativo de um conjunto de coordenadas cartesianas referentes a uma identidade).               
-data PosicaoPessoa = Pos Nome Coordenada deriving (Show,Eq)     
+data PosicaoPessoa = Pos Nome Coordenada deriving (Show,Eq)
 
 
 {-| A função 'auxCoord' recebe um @data type@ 'PosicaoPessoa' e um 'Movimento' e calcula novas coordenadas.
@@ -150,7 +150,7 @@ prop> posicao pos [] = pos
 -}
 posicao :: PosicaoPessoa -> Movimentos -> PosicaoPessoa
 posicao pos [] = pos
-posicao pos (h:t) = posicao (auxCoord pos h) t
+posicao pos (h:t) =  auxCoord pos h `posicao` t
 
 
 {-| A função 'posicoesMs' recebe uma lista de posições de pessoas e uma lista de movimentos e calcula a posição de cada pessoa depois de executar todos os movimentos.
@@ -217,7 +217,7 @@ prop> pessoasNorte [] = []
 prop> pessoasNorte [Pos name (x, y)] = [name]
 -}
 pessoasNorte :: [PosicaoPessoa] -> [String]
-pessoasNorte [] = [] 
+pessoasNorte [] = []
 pessoasNorte [Pos name _] = []
 pessoasNorte ((Pos name1 (x1, y1)) : (Pos name2 (x2, y2)) : t)
   | y1 < y2 = name2 : pessoasNorte (Pos name1 (x1, y1) : t)
@@ -277,3 +277,33 @@ nEsq [] _ = []
 nEsq (h:t) n
   | n > 0 = nEsq (t ++ [h]) (n-1)
   | otherwise = h:t
+
+------------------------------------------------------------------------------------------------
+
+{-| A função 'elem2' recebe uma lista e desloca cada elemento da lista, n posições para a esquerda.
+
+==  __Notas:__
+* Apenas funciona se o @n@ for menor ou igual ao comprimento da lista.
+* Na utilização de um @n@ superior ao comprimento da lista é devolvida a própria lista.
+* Na utilização de um @n@ igual ou menor que 0 é devolvida a própria lista.
+
+==  __Exemplos de utilização:__
+>>> nEsq [1, 2, 3, 4, 5] 6
+[1, 2, 3, 4, 5]
+>>> nEsq [1, 2, 3, 4, 5] 2
+[3, 4, 5, 1, 2]
+>>> nEsq [1, 2, 3, 4, 5] 0
+[1, 2, 3, 4, 5]
+>>> nEsq [1, 2, 3, 4, 5] -2
+[1, 2, 3, 4, 5]
+
+== __Propriedades:__
+prop> nEsq [] _ = []
+-}
+elem2 :: Eq a => [a] -> a -> Int
+elem2 [] _ = -1
+elem2 (h:t) el
+  | h /= el = 1 + elem2 t el
+  | otherwise = 0
+
+  -- se não entregar uma lista vazia mas o elemento não estiver lá, não dá -1
