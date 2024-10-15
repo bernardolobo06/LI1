@@ -307,3 +307,11 @@ elem2 (h:t) el
   | otherwise = 0
 
   -- se não entregar uma lista vazia mas o elemento não estiver lá, não dá -1
+
+
+
+
+
+
+
+  --exercicio 8 na ficha 4
