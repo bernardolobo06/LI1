@@ -163,7 +163,7 @@ posicao pos (h:t) =  auxCoord pos h `posicao` t
 ==  __Exemplos de utilização:__
 >>> posicoesMs [(Pos "Afonso" (0, 0)), (Pos "Bernardo" (5, -5))] [S, S, W]
 [(Pos "Afonso" (-1, -2)), (Pos "Bernardo" (4, -7))]
->>> posicao [(Pos "Afonso" (0, 0)), (Pos "Bernardo" (5, -5))] [N, N, E, S]
+>>> posicoesMs [(Pos "Afonso" (0, 0)), (Pos "Bernardo" (5, -5))] [N, N, E, S]
 [(Pos "Afonso" (1, 1)), (Pos "Bernardo" (6, -4))]
 
 == __Propriedades:__
@@ -288,11 +288,11 @@ nEsq (h:t) n
 ==  __Exemplos de utilização:__
 >>> search [1, 2, 3, 4, 5] 6
 -1
->>> nEsq [] 2
+>>> search [] 2
 -1
->>> nEsq [1, 2, 3, 4, 5] 4
+>>> search [1, 2, 3, 4, 5] 4
 2
->>> nEsq [1, 2, 3, 4, 5] 1
+>>> search [1, 2, 3, 4, 5] 1
 0
 
 == __Propriedades:__
@@ -393,9 +393,9 @@ words' l = aux l []
 == __Exemplos de utilização:__
 >>> unwords' [""]
 ""
->>> words' ["Hello","World"]
+>>> unwords' ["Hello","World"]
 "Hello World"
->>> words' ["Hi,","I","am","Haskell"]
+>>> unwords' ["Hi,","I","am","Haskell"]
 "Hi, I am Haskell"
 
 == __Propriedades:__

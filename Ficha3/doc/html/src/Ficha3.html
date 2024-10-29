@@ -331,7 +331,7 @@ prop&gt; posicao pos [] = pos
 ==  __Exemplos de utiliza&#231;&#227;o:__
 &gt;&gt;&gt; posicoesMs [(Pos &quot;Afonso&quot; (0, 0)), (Pos &quot;Bernardo&quot; (5, -5))] [S, S, W]
 [(Pos &quot;Afonso&quot; (-1, -2)), (Pos &quot;Bernardo&quot; (4, -7))]
-&gt;&gt;&gt; posicao [(Pos &quot;Afonso&quot; (0, 0)), (Pos &quot;Bernardo&quot; (5, -5))] [N, N, E, S]
+&gt;&gt;&gt; posicoesMs [(Pos &quot;Afonso&quot; (0, 0)), (Pos &quot;Bernardo&quot; (5, -5))] [N, N, E, S]
 [(Pos &quot;Afonso&quot; (1, 1)), (Pos &quot;Bernardo&quot; (6, -4))]
 
 == __Propriedades:__
@@ -610,11 +610,11 @@ forall a. a -&gt; [a] -&gt; [a]
 ==  __Exemplos de utiliza&#231;&#227;o:__
 &gt;&gt;&gt; search [1, 2, 3, 4, 5] 6
 -1
-&gt;&gt;&gt; nEsq [] 2
+&gt;&gt;&gt; search [] 2
 -1
-&gt;&gt;&gt; nEsq [1, 2, 3, 4, 5] 4
+&gt;&gt;&gt; search [1, 2, 3, 4, 5] 4
 2
-&gt;&gt;&gt; nEsq [1, 2, 3, 4, 5] 1
+&gt;&gt;&gt; search [1, 2, 3, 4, 5] 1
 0
 
 == __Propriedades:__
@@ -844,9 +844,9 @@ forall a. a -&gt; [a] -&gt; [a]
 == __Exemplos de utiliza&#231;&#227;o:__
 &gt;&gt;&gt; unwords' [&quot;&quot;]
 &quot;&quot;
-&gt;&gt;&gt; words' [&quot;Hello&quot;,&quot;World&quot;]
+&gt;&gt;&gt; unwords' [&quot;Hello&quot;,&quot;World&quot;]
 &quot;Hello World&quot;
-&gt;&gt;&gt; words' [&quot;Hi,&quot;,&quot;I&quot;,&quot;am&quot;,&quot;Haskell&quot;]
+&gt;&gt;&gt; unwords' [&quot;Hi,&quot;,&quot;I&quot;,&quot;am&quot;,&quot;Haskell&quot;]
 &quot;Hi, I am Haskell&quot;
 
 == __Propriedades:__
