@@ -278,40 +278,129 @@ nEsq (h:t) n
   | n > 0 = nEsq (t ++ [h]) (n-1)
   | otherwise = h:t
 
-------------------------------------------------------------------------------------------------
 
-{-| A função 'elem2' recebe uma lista e desloca cada elemento da lista, n posições para a esquerda.
+{-| A função 'search' procura a posição da primeira ocorrência de um elemento numa lista.
 
 ==  __Notas:__
-* Apenas funciona se o @n@ for menor ou igual ao comprimento da lista.
-* Na utilização de um @n@ superior ao comprimento da lista é devolvida a própria lista.
-* Na utilização de um @n@ igual ou menor que 0 é devolvida a própria lista.
+* Devolve (-1) caso o elemento não ocorra na lista.
+* O índice de posições começa em zero.
 
 ==  __Exemplos de utilização:__
->>> nEsq [1, 2, 3, 4, 5] 6
-[1, 2, 3, 4, 5]
->>> nEsq [1, 2, 3, 4, 5] 2
-[3, 4, 5, 1, 2]
->>> nEsq [1, 2, 3, 4, 5] 0
-[1, 2, 3, 4, 5]
->>> nEsq [1, 2, 3, 4, 5] -2
-[1, 2, 3, 4, 5]
+>>> search [1, 2, 3, 4, 5] 6
+-1
+>>> nEsq [] 2
+-1
+>>> nEsq [1, 2, 3, 4, 5] 4
+2
+>>> nEsq [1, 2, 3, 4, 5] 1
+0
 
 == __Propriedades:__
-prop> nEsq [] _ = []
+prop> search [] _ = -1
 -}
-elem2 :: Eq a => [a] -> a -> Int
-elem2 [] _ = -1
-elem2 (h:t) el
-  | h /= el = 1 + elem2 t el
-  | otherwise = 0
-
-  -- se não entregar uma lista vazia mas o elemento não estiver lá, não dá -1
+search :: Eq a => [a] -> a -> Int
+search l el = aux l el 0
+  where aux [] _ _ = -1
+        aux (h:t) el i | h == el = i
+                       | otherwise = aux t el (i+1)
 
 
+{-| A função 'swap' troca o elemento de uma determinada posição numa lista, por outro elemento dado.
+
+== __Notas:__
+* Se a lista estiver vazia, devolve a própria lista.
+* Se a lista não tiver tantos elementos quanto o índice dado, devolve a própria lista.
+
+== __Exemplos de utilização:__
+>>> swap 'X' 3 "abcdefg"
+"abcXefg"
+>>> swap 10 7 [1..5]
+[1, 2, 3, 4, 5]
+>>> swap 10 5 []
+[]
+
+== __Propriedades:__
+prop> swap _ _ [] = []
+-}
+swap :: a -> Int -> [a] -> [a]
+swap el i l = aux el i l 0
+  where aux _ _ [] _ = []
+        aux el i (h:t) count | count == i = el:t
+                             | otherwise = h:aux el i t (count+1)
 
 
+{-| A função 'listIndex'' percorre uma lista até um índice dado e devolve o elemento desse índice.
+
+== __Notas:__
+* Esta função não funciona para listas vazias.
+* O índice de posições começa em 0.
+* O índice dado deve ser inferior ao comprimento da lista.
+
+== __Exemplos de utilização:__
+>>> listIndex' [0..9] 5
+5
+>>> listIndex' ['a'..'f'] 2
+'c'
+-}
+listIndex' :: [a] -> Int -> a
+listIndex' l i = aux l i 0
+  where aux (h:t) i count | i == count = h
+                          | otherwise = aux t i (count+1)
 
 
+{-| A função 'concat'' concatena uma lista de listas, ou seja, une o conteúdo de todas as listas numa só.
 
-  --exercicio 8 na ficha 4
+== __Notas:__
+* Se a lista estiver vazia, devolve a própria lista. 
+* A ordem das listas é conservada.
+
+== __Exemplos de utilização:__
+>>> concat' [[0..4], [2..5]]
+[0,1,2,3,4,2,3,4,5]
+>>> concat' ["Hello", "World!"]
+"HelloWorld!"
+
+== __Propriedades:__
+prop> concat' [] = []
+-}
+concat' :: [[a]] -> [a]
+concat' [] = []
+concat' (h:t) = h ++ concat' t
+
+
+{-| A função 'words'' recebe uma string, e devolve uma lista de strings com todas as palavras da string original, sem espaços.
+
+== __Exemplos de utilização:__
+>>> words' []
+[""]
+>>> words' "Hello World"
+["Hello","World"]
+>>> words' "Hi, I am Haskell"
+["Hi,","I","am","Haskell"]
+
+== __Propriedades:__
+prop> words' [] = [""]
+-}
+words' :: [Char] -> [[Char]]
+words' l = aux l []
+  where aux [] ls = [ls]
+        aux (h:t) ls | h /= ' '  = aux t (ls ++ [h])
+                     | otherwise = ls : aux t []
+
+
+{-| A função 'unwords'' recebe uma lista string, e devolve a união das strings originais, espaçadas.
+
+== __Exemplos de utilização:__
+>>> unwords' [""]
+""
+>>> words' ["Hello","World"]
+"Hello World"
+>>> words' ["Hi,","I","am","Haskell"]
+"Hi, I am Haskell"
+
+== __Propriedades:__
+prop> unwords' [a] = a
+-}
+unwords' :: [[Char]] -> [Char]
+unwords' [a] = a
+unwords' (h:t) = h ++ ' ' : unwords' t
