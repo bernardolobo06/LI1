@@ -53,3 +53,34 @@ testeG1 = "Teste g [['Ana', 'Beatriz'], ['Claudia', 'Diana'], ['Eduarda', 'Franc
 testeG2 = "Teste g [['Ana', 'Beatriz']]" ~: [("Ana",1),("Beatriz",2)] ~=? g [["Ana", "Beatriz"]]
 testeG3 = "Teste g []" ~: [] ~=? g []
 testesG = test [testeG1, testeG2, testeG3]
+
+
+
+
+
+
+
+
+
+
+
+
+type Posicao = (Int, Int)
+data Movimento = N | S | E | O deriving (Show, Eq)
+
+mov :: Posicao -> Movimento -> Posicao
+
+mov (x, y) m | m == N = (x, y+1)
+             | m == S = (x, y-1) 
+             | m == E = (x+1, y)
+             | m == O = (x-1, y)
+
+val :: Posicao -> [Posicao] -> Int -> Int
+val pt [] acc = acc
+val pt (h:t) acc | pt == h   = val pt t (acc+1)
+                 | otherwise = val pt t acc
+
+h :: Posicao -> [Movimento] -> [Posicao] -> Int
+h _ _ [] = 0 
+h pt [] ldg = val pt ldg 0
+h pt (x:xs) ldg = val pt ldg 0 + h (mov pt x) xs ldg
