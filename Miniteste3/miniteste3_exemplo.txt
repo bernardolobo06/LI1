@@ -1,0 +1,6 @@
+Exercício 2
+R: A função reageTempo atualiza a posição e velocidade de um objeto num determinado espaço bidimensional, e o tempo mostrado na janela.
+A posição é atualizada somando a velocidade à posição atual.
+A velocidade por outro lado é atualizada quando o objeto colide com os limites da janela.
+Se colidir com os limites esquerdo ou direito, a velocidade horizontal é invertida. Se colidir com os limites superior ou inferior, a velocidade vertical é invertida.
+Por fim, o tempo é atualizado ao incrementar 'n', que corresponde a 1/frame rate, em cada frame.
