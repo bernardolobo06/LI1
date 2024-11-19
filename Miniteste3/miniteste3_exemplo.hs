@@ -132,17 +132,12 @@ main = do play  dm            -- janela onde irá decorrer o jogo
                 reageTempo    -- reage ao passar do tempo
 
 
+-- HUnit Test --
 
-{-
-testEstadoInicial :: Test
-testEstadoInicial = TestCase (assertBool "Figuras fora da janela" (all dentroJanela (estadoInicialFiguras estadoInicial)))
-    where
-        dentroJanela (x, y) = x >= -200 && x <= 200 && y >= -200 && y <= 200
-        estadoInicialFiguras ((x, y), _, circ, _) = (x, y) : map fst circ
-
-testsReplace = test [
-    "Teste replace 1 0 [4, 5, 6, 7]"    ~: [1, 5, 6, 7]    ~=? replace 1 0 [4, 5, 6, 7],
-    "Teste replace 3 5 []"              ~: []              ~=? replace 3 5 [],
-    "Teste replace 7 8 [4, 5, 6, 7]"    ~: [4, 5, 6, 7]    ~=? replace 7 8 [4, 5, 6, 7]
-    ]
--}
+estadoInicialValido :: Estado -> Bool
+estadoInicialValido ((x,y), v, circ, t) = x <= 190 && x >= (-190) && y <= 190 && y >= (-190) && circValido circ
+    where circValido :: Circulos -> Bool
+          circValido [] = True
+          circValido (((cx,cy), r):xs) = cx <= 190 && cx >= (-190) && cy <= 190 && cy >= (-190) && circValido xs
+    
+testEstadoInicial = test ["Teste estadoInicialValido estadoInicial" ~: True ~=? estadoInicialValido estadoInicial]
